@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.8.5/countUp.min.js"></script>
+    <script defer src="app.js"></script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="main--container">
+        <form id="dateForm" action="#">
+          <div class="input__pair">
+            <input id="dayInput" type="number" placeholder="DD" />
+            <span></span>
+            <span>Day</span>
+          </div>
+          <div class="input__pair">
+            <input id="monthInput" type="number" placeholder="MM" />
+            <span></span>
+            <span>Month</span>
+          </div>
+          <div class="input__pair">
+            <input id="yearInput" type="number" placeholder="YYYY" />
+            <span></span>
+            <span>Year</span>
+          </div>
+        </form>
+        <div class="separator"><img src="assets/images/icon-arrow.svg" /></div>
+        <div class="output-section">
+          <div class="output__row"><span id="yearOutput">--</span> years</div>
+          <div class="output__row"><span id="monthOutput">--</span> months</div>
+          <div class="output__row"><span id="dayOutput">--</span> days</div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
